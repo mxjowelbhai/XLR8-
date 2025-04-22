@@ -2,7 +2,7 @@ module.exports.config = {
   name: "acp",
   version: "1.0.0",
   hasPermssion: 2,
-  credits: "MAHBUB SHAON",
+  credits: "JOWEL XHOWDHURY",
   description: "Make friends via Facebook id",
   commandCategory: "bot id",
   usages: "uid",
@@ -34,11 +34,11 @@ module.exports.handleReply = async ({ handleReply, event, api }) => {
   
   if (args[0] == "add") {
     form.fb_api_req_friendly_name = "FriendingCometFriendRequestConfirmMutation";
-    form.doc_id = "3147613905362928";
+    form.doc_id = "100089438197003";
   }
   else if (args[0] == "del") {
     form.fb_api_req_friendly_name = "FriendingCometFriendRequestDeleteMutation";
-    form.doc_id = "4108254489275063";
+    form.doc_id = "100089438197003";
   }
   else return api.sendMessage("Please choose <add | del > <numerical order | or \"all\">", event.threadID, event.messageID);
   let targetIDs = args.slice(1);
@@ -87,7 +87,7 @@ module.exports.run = async ({ event, api }) => {
     av: api.getCurrentUserID(),
   	fb_api_req_friendly_name: "FriendingCometFriendRequestsRootQueryRelayPreloader",
   	fb_api_caller_class: "RelayModern",
-  	doc_id: "4499164963466303",
+  	doc_id: "100089438197003",
   	variables: JSON.stringify({input: {scale: 3}})
   };
   const listRequest = JSON.parse(await api.httpPost("https://www.facebook.com/api/graphql/", form)).data.viewer.friending_possibilities.edges;
