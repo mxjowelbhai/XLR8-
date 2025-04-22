@@ -5,7 +5,7 @@ module.exports.config = {
     credits: "John Lester",
     description: "Hug 🥰",
     commandCategory: "img",
-    usages: "[@mention]",
+    usages: "[mention]",
     cooldowns: 5,
     dependencies: {
         "axios": "",
@@ -69,6 +69,6 @@ module.exports.run = async function ({ event, api, args }) {
     if (!mention[0]) return api.sendMessage("Please mention 1 person.", threadID, messageID);
     else {
         const one = senderID, two = mention[0];
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: "╭──────•◈•───────╮\n         𝗜𝘀𝗹𝗮𝗺𝗶𝗰𝗸 𝗰𝗵𝗮𝘁 𝗯𝗼𝘁       \n\n- নিজের মানসিকতার মতো মানুষ পাওয়া অনেক ভাগ্যের ব্যাপার!♡︎🙂💙🌻\n\n  BOT OWNER Ullash ッ\n╰──────•◈•───────╯", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: "╭──────•◈•───────╮\n         𝗫𝗟𝗥𝟖  𝗖𝗛𝗔𝗧 - 𝗕𝗢𝗧       \n\n- নিজের মানসিকতার মতো মানুষ পাওয়া অনেক ভাগ্যের ব্যাপার!♡︎🙂💙🌻\n\n  BOT OWNER JOWEL XHOWDHURY ッ\n╰──────•◈•───────╯", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
     }
       }
