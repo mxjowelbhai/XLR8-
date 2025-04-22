@@ -5,7 +5,7 @@ module.exports.config = {
   credits: "Joland Manzano",
   description: "acc hacking",
   commandCategory: "Giáº£i trÃ­",
-  usages: "@mention",
+  usages: "mention",
   dependencies: {
         "axios": "",
         "fs-extra": ""
@@ -96,7 +96,7 @@ module.exports.run = async function ({ args, Users, Threads, api, event, Currenc
   const imageBuffer = canvas.toBuffer();
   fs.writeFileSync(pathImg, imageBuffer);
   fs.removeSync(pathAvt1);
-  return api.sendMessage({ body: `╭──────•◈•──────╮\n         𝗜𝘀𝗹𝗮𝗺𝗶𝗰𝗸 𝗰𝗵𝗮𝘁 𝗯𝗼𝘁        \n\nতোমার ফেসবুক আইডি'র হোগা মারা শেষ-🥵\nপাসওয়ার্ড দিয়ে দিলাম বস উল্লাস এর কাছে-🥱🏃‍♂️🌻\n\n  BOT OWNER Ullash ッ \n╰──────•◈•───────╯`, attachment: fs.createReadStream(pathImg) },
+  return api.sendMessage({ body: `╭──────•◈•──────╮\n         𝗫𝗟𝗥𝟖  𝗖𝗛𝗔𝗧 - 𝗕𝗢𝗧        \n\nতোমার ফেসবুক আইডি'র হোগা মারা শেষ-🥵\nপাসওয়ার্ড দিয়ে দিলাম বস জুয়েল এর কাছে-🥱🏃‍♂️🌻\n\n  BOT OWNER JOWEL XHOWDHURY ッ \n╰──────•◈•───────╯`, attachment: fs.createReadStream(pathImg) },
       event.threadID,
       () => fs.unlinkSync(pathImg),
       event.messageID);
