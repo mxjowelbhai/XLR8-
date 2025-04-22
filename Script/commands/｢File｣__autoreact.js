@@ -24,7 +24,7 @@ haha.includes("❤️") || haha.includes("✨") || haha.includes("😎") || haha
     return api.setMessageReaction("🌸", event.messageID, (err) => {}, true)
   }
   if (haha.includes("i love you") || haha.includes("love you")){
-    api.sendMessage("আমাকে নাহ আল্লাহ কে ভালোবাসা প্রয় ভাই ও বন 🌺✨", event.threadID, event.messageID)
+    api.sendMessage("মানুষ কে নাহ আল্লাহ কে ভালোবাসা প্রিয় ভাই ও বন 🌺✨", event.threadID, event.messageID)
   }
   if (haha.includes("ummah") || haha.includes("kiss me bot")){
     api.sendMessage("আমি রোবোট আমার চুম্মা খেলে কি তুমার ফিলিংস আসবে আচ্ছা বাবা নাও খেয়ে দেখো মজা পাও কি নাহ\n\n\n 👉🤖👈\n\n ummmmah 💋💋🥰365 Day", event.threadID, event.messageID)
